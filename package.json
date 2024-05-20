@@ -13,8 +13,8 @@
 		"mdx"
 	],
 	"peerDependencies": {
-		"@mdx-js/loader": "^0.15.0",
-		"@mdx-js/mdx": "^0.15.0",
+		"@mdx-js/loader": "^3.0.1",
+		"@mdx-js/mdx": "^3.0.1",
 		"babel-core": "^6.26.3"
 	},
 	"author": "Joseph Black <josephconradblack@gmail.com> (https://josephconradblack.com)",
