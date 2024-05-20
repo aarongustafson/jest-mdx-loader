@@ -1,7 +1,7 @@
 import mdx from "@mdx-js/mdx";
 import babel from "babel-core";
 
-createTransformer = function(preMdxParseCallback) {
+export function createTransformer(preMdxParseCallback) {
   return function(src, filename, config, options) {
     let rawMDX = src;
 
@@ -30,5 +30,3 @@ createTransformer = function(preMdxParseCallback) {
     return babelRes;
   };
 };
-
-module.exports = createTransformer;
