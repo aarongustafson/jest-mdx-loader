@@ -1,6 +1,6 @@
 "use strict";
 
-var createTransformer = require("./src/createTransformer");
+import createTransformer from "./src/createTransformer";
 
 module.exports = {
   process: createTransformer()
