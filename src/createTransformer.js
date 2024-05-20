@@ -1,8 +1,8 @@
 import mdx from "@mdx-js/mdx";
 import babel from "babel-core";
 
-export default function createTransformer(preMdxParseCallback) {
-  return function(src, filename, config, options) {
+export default function createMDXTransformer(preMdxParseCallback) {
+  function process(src, filename, config, options) {
     let rawMDX = src;
 
     if (preMdxParseCallback) {
