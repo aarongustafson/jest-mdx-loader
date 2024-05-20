@@ -1,5 +1,5 @@
-var mdx = import("@mdx-js/mdx");
-var babel = import("babel-core");
+import mdx from "@mdx-js/mdx";
+import babel from "babel-core";
 
 createTransformer = function(preMdxParseCallback) {
   return function(src, filename, config, options) {
