@@ -1,5 +1,7 @@
-import createMDXTransformer from "./src/createTransformer";
+import { createMDXTransformer } from "./src/createTransformer";
 
-export default { createTransformer(preMdxParseCallback){
-  return new createMDXTransformer();
-} };
+export default {
+  createTransformer(preMdxParseCallback){
+    return new createMDXTransformer(preMdxParseCallback);
+  }
+};
